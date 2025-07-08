@@ -41,10 +41,10 @@ isMoveBird = False
 
 
 def loadImage():
-    brick.display.image("FlappyBird.jpg", clear=False)
-    brick.display.image("Pipe.jpg", (widthScreen + 40, 40), clear=False)
-    brick.display.image("Pipe2.jpg", (widthScreen + 40, 40), clear=False)
-    brick.display.image("bird.jpg", (int((178 / 2) - 20), 80), clear=False)
+    brick.display.image("img/FlappyBird.jpg", clear=False)
+    brick.display.image("img/Pipe.jpg", (widthScreen + 40, 40), clear=False)
+    brick.display.image("img/Pipe2.jpg", (widthScreen + 40, 40), clear=False)
+    brick.display.image("img/bird.jpg", (int((178 / 2) - 20), 80), clear=False)
     wait(2000)
     brick.display.clear()
 
@@ -120,14 +120,14 @@ loadImage()
 
 
 while True:
-    brick.display.image('bird.jpg', (int(playerPosition_X),
-                                     int(playerPosition_Y)), clear=False)
+    brick.display.image('img/bird.jpg', (int(playerPosition_X),
+                                         int(playerPosition_Y)), clear=False)
 
-    brick.display.image('Pipe.jpg', (int(pipePosition_X),
-                                     int(pipePosition_Y)), clear=False)
+    brick.display.image('img/Pipe.jpg', (int(pipePosition_X),
+                                         int(pipePosition_Y)), clear=False)
 
-    brick.display.image('Pipe.jpg', (int(pipePosition_X2),
-                                     int(pipePosition_Y2)), clear=False)
+    brick.display.image('img/Pipe.jpg', (int(pipePosition_X2),
+                                         int(pipePosition_Y2)), clear=False)
 
     pressedAndReleasedButton()
 
